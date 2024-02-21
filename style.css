@@ -22,6 +22,93 @@
     src: url(CreatoDisplay-Regular.otf);
 }
 
+@media only screen and (max-width: 1000px) {
+    #layout .work {
+        flex-direction: column;
+        height: calc(100svh - 2*(var(--topheight)))
+    }
+
+    #layout .work .toolbar ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60%;
+        justify-content: center;
+        margin: 0;
+        gap: 2em;
+    }
+
+    #layout .work .toolbar {
+        flex-basis: 1em;
+        width: 100%;
+        height: 3em;
+        display: flex;
+        place-content: center;
+        align-items: center;
+    }
+
+    .work .toolbar ul li img {
+        width: auto;
+        height: 100%;
+    }
+
+    #layout .work .main {
+        display: grid;
+        height: 50%;
+        flex-basis: 1px;
+        flex-grow: 1;
+        grid-template-columns: auto auto;
+    }
+
+    .work .toolbar {
+        grid-area: toolbar;
+    }
+
+    .work .main {
+        grid-area: main;
+    }
+
+    .work .right {
+        grid-area: right;
+    }
+
+    .display {
+        flex-basis: 1px;
+        flex-grow: 0;
+    }
+
+    .layers {
+        flex-basis: 50em;
+        height: 20%;
+    }
+
+    #layout .right {
+        flex-direction: row;
+    }
+
+    #layout .right .color {
+        flex-basis: 50%;
+
+    }
+
+    #layout .work .main .layers {
+        height: auto;
+    }
+
+    #layout .work .main .display .slideshow-container {
+        height: calc(100svh - 2*(var(--topheight)) - 45%);
+    }
+
+    #layout .work .right {
+        height: auto;
+    }
+
+    #layout .work .main {
+        flex-direction: column;
+    }
+
+}
+
 body {
     background-color: var(--bg);
     margin: 0;
