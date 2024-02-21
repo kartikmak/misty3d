@@ -275,7 +275,7 @@ a {
 }
 
 .main .layers .bottom {
-    position: absolute;
+    position: sticky;
     bottom: 0;
     display: flex;
     background-color: var(--main);
